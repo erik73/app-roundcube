@@ -22,7 +22,7 @@ RUN apk add --no-cache \
     nginx=1.28.3-r1 \ 
     php84=8.4.21-r0 \
     php84-fpm=8.4.21-r0 \
-    php84-imap=8.4.21-r0 \
+    php84-php84-pecl-imap=1.0.3-r0 \
     php84-session=8.4.21-r0 \
     php84-mysqli=8.4.21-r0 \
     php84-opcache=8.4.21-r0 \
