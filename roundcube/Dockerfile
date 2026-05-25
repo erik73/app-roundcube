@@ -5,7 +5,7 @@ FROM ${BUILD_FROM}
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ARG S6_OVERLAY_VERSION="v3.2.3.0"
-ARG ROUNDCUBE_VERSION="1.7.0"
+ARG ROUNDCUBE_VERSION="1.7.1"
 
 # Build arguments
 ARG BUILD_ARCH
