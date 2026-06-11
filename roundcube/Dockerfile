@@ -20,26 +20,26 @@ ARG BUILD_VERSION
 RUN apk add --no-cache \
     mariadb-client=11.4.11-r0 \
     nginx=1.28.3-r2 \ 
-    php84=8.4.21-r0 \
-    php84-fpm=8.4.21-r0 \
+    php84=8.4.22-r0 \
+    php84-fpm=8.4.22-r0 \
     php84-pecl-imap=1.0.3-r0 \
-    php84-session=8.4.21-r0 \
-    php84-mysqli=8.4.21-r0 \
-    php84-opcache=8.4.21-r0 \
-    php84-mbstring=8.4.21-r0 \
-    php84-pdo_mysql=8.4.21-r0 \
-    php84-curl=8.4.21-r0 \
-    php84-xml=8.4.21-r0 \
-    php84-dom=8.4.21-r0 \
-    php84-intl=8.4.21-r0 \
-    php84-ctype=8.4.21-r0 \
-    php84-zip=8.4.21-r0 \
-    php84-gd=8.4.21-r0 \
+    php84-session=8.4.22-r0 \
+    php84-mysqli=8.4.22-r0 \
+    php84-opcache=8.4.22-r0 \
+    php84-mbstring=8.4.22-r0 \
+    php84-pdo_mysql=8.4.22-r0 \
+    php84-curl=8.4.22-r0 \
+    php84-xml=8.4.22-r0 \
+    php84-dom=8.4.22-r0 \
+    php84-intl=8.4.22-r0 \
+    php84-ctype=8.4.22-r0 \
+    php84-zip=8.4.22-r0 \
+    php84-gd=8.4.22-r0 \
     php84-pecl-imagick=3.8.1-r0 \
-    php84-xmlwriter=8.4.21-r0 \
-    php84-fileinfo=8.4.21-r0 \
-    php84-exif=8.4.21-r0 \
-    php84-iconv=8.4.21-r0 \
+    php84-xmlwriter=8.4.22-r0 \
+    php84-fileinfo=8.4.22-r0 \
+    php84-exif=8.4.22-r0 \
+    php84-iconv=8.4.22-r0 \
     && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/syslogd-overlay-noarch.tar.xz" \
         | tar -C / -Jxpf - \
     && sed -i 's#^ + .*$# + -^auth\\. -^authpriv\\. -mail\\. $T ${dir}/everything#' /etc/s6-overlay/s6-rc.d/syslogd-log/run \
