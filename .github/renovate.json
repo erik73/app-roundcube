@@ -62,6 +62,33 @@
       "automerge": true
     },
     {
+      "description": "Packages that live in the Alpine community repository",
+      "matchDatasources": ["custom.alpine"],
+      "matchPackageNames": [
+        "alpine_3_24/php84",
+        "alpine_3_24/php84-curl",
+        "alpine_3_24/php84-fpm",
+        "alpine_3_24/php84-gd",
+        "alpine_3_24/php84-iconv",
+        "alpine_3_24/php84-mbstring",
+        "alpine_3_24/php84-mysqli",
+        "alpine_3_24/php84-opcache",
+        "alpine_3_24/php84-openssl",
+        "alpine_3_24/php84-session",
+        "alpine_3_24/php84-xml",
+        "alpine_3_24/php84-zip"
+      ],
+      "registryUrls": [
+        "https://dl-cdn.alpinelinux.org/alpine/v3.24/community/x86_64/"
+      ]
+    },
+    {
+      "groupName": "PHP",
+      "matchDatasources": ["custom.alpine"],
+      "automerge": true,
+      "matchDepNames": ["/alpine.*/php.*/"]
+    },
+    {
       "groupName": "App base image",
       "matchDatasources": ["docker"]
     },
