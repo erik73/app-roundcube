@@ -66,17 +66,25 @@
       "matchDatasources": ["custom.alpine"],
       "matchPackageNames": [
         "alpine_3_24/php84",
-        "alpine_3_24/php84-curl",
         "alpine_3_24/php84-fpm",
-        "alpine_3_24/php84-gd",
-        "alpine_3_24/php84-iconv",
-        "alpine_3_24/php84-mbstring",
+        "alpine_3_24/php84-pecl-imap",
+        "alpine_3_24/php84-session",
         "alpine_3_24/php84-mysqli",
         "alpine_3_24/php84-opcache",
-        "alpine_3_24/php84-openssl",
-        "alpine_3_24/php84-session",
+        "alpine_3_24/php84-mbstring",
+        "alpine_3_24/php84-pdo_mysql",
+        "alpine_3_24/php84-curl",
         "alpine_3_24/php84-xml",
-        "alpine_3_24/php84-zip"
+        "alpine_3_24/php84-dom",
+        "alpine_3_24/php84-intl",
+        "alpine_3_24/php84-ctype",
+        "alpine_3_24/php84-zip",
+        "alpine_3_24/php84-gd",
+        "alpine_3_24/php84-pecl-imagick",
+        "alpine_3_24/php84-xmlwriter",
+        "alpine_3_24/php84-fileinfo",
+        "alpine_3_24/php84-exif",
+        "alpine_3_24/php84-iconv"
       ],
       "registryUrls": [
         "https://dl-cdn.alpinelinux.org/alpine/v3.24/community/x86_64/"
